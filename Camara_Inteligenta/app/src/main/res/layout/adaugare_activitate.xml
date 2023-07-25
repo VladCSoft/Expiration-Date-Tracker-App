@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="32dp"
+    android:orientation="vertical"
+    tools:context=".AdaugaActivitate">
+
+    <ImageView
+        android:id="@+id/image_frigider"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/frigider_imagine"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/ed_nume_produs"
+        android:hint="Nume Produs"
+        android:minWidth="64dp"
+        android:minHeight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_data_expirare"
+        android:hint="Data Expirare"
+        android:minWidth="64dp"
+        android:minHeight="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_scaneaza"
+            android:text="Scaneaza codul de bare:"
+            android:textSize="20sp"
+            android:layout_marginLeft="48sp"
+            android:layout_marginRight="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ic_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buton_adaugare_actualizare_produs"
+        android:layout_width="wrap_content"
+        android:text="Adauga Produs"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

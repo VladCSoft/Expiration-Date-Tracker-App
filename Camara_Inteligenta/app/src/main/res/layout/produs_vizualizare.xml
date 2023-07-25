@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3174FA"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nume_produs_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nume Produs: "
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_nume_produs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="Nume Produs" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_data_expirare_eticheta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Expirare: "
+                android:textColor="#CBCBCB"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_data_expirare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CBCBCB"
+                android:textSize="16sp"
+                tools:text="Data Expirare" />
+
+            <TextView
+                android:id="@+id/tv_expira_curand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Expira: 7 Zile"
+                android:textColor="#CBCBCB"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/actiune_stergere"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_stergere" />
+
+    <ImageView
+        android:id="@+id/actiune_actualizare"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/actiune_stergere"
+        android:src="@drawable/ic_actualizare" />
+
+</RelativeLayout>
